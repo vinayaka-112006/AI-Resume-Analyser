@@ -4,7 +4,7 @@ import {
   getInterviewReportById,
   generateResumePdf,
 } from "../services/interview.api";
-import { useContext } from "react"; // ✅ no useEffect, no useParams import
+import { useContext } from "react";
 import { InterviewContext } from "../interview.context";
 
 export const useInterview = () => {
