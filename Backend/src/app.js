@@ -4,6 +4,8 @@ const cors = require("cors");
 
 const app = express();
 
+const { wafMiddleware } = require("./middlewares/waf.middleware");
+
 app.use(express.json());
 app.use(cookieParser());
 app.use(
@@ -12,6 +14,7 @@ app.use(
     credentials: true,
   }),
 );
+app.use(wafMiddleware);
 const authRouter = require("./routes/auth.routes");
 const interviewRouter = require("./routes/interview.routes");
 
