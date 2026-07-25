@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "ai-resume-analyser-three-hazel.vercel.app",
+    origin: "https://ai-resume-analyser-three-hazel.vercel.app",
     credentials: true,
   }),
 );
