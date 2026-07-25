@@ -40,7 +40,6 @@ export const useAuth = () => {
   };
 
   useEffect(() => {
-    console.log("getMe effect fired");
     const getAndSetUser = async () => {
       try {
         const data = await getMe();

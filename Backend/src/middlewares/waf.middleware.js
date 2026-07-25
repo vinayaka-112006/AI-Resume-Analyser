@@ -48,7 +48,8 @@ function wafMiddleware(req, res, next) {
   }
 
   // ===== COMMAND INJECTION =====
-  const cmdPattern = /(;|\|\||&&|\||`|\$\(|\))/;
+  const cmdPattern =
+    /(;|&&|\|\||\||`|\$\(|\$\{|>|>>|\n|\r|\b(cat|ls|pwd|whoami|curl|wget|chmod|chown|rm|mv|cp|touch|uname|id|ps|netstat)\b)/i;
 
   if (cmdPattern.test(input)) {
     logRequest(req, "BLOCKED", "Command Injection");
