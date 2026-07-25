@@ -1,62 +1,111 @@
-# 📄 AI Resume Analyzer
+# 🤖 AI Resume Analyser
 
 An AI-powered web application that analyzes resumes and provides intelligent feedback, skill gap analysis, and improvement suggestions to help users optimize their resumes for better job opportunities.
 
----
-
-
-## ✨ Features
-
-- 🤖 AI-powered resume analysis
-- 📊 ATS-style resume scoring
-- 🧠 Skill gap detection based on job roles
-- 💡 Smart suggestions to improve resume quality
-- 📄 Resume parsing and structured data extraction
-- ⚡ Fast and user-friendly interface
--    Resume generation 
+The application uses Artificial Intelligence to evaluate resumes, provide ATS-style scoring, identify skill gaps, generate improvement suggestions, and help users prepare for their career goals.
 
 ---
 
-## 🛠️ Tech Stack
+# ✨ Features
 
-**Frontend:**
-- React.js 
-- HTML, CSS, JavaScript
-- Tailwind CSS , SCSS
-- Bootstrap
-- Redux Tool kit
+## 🤖 AI-Powered Resume Analysis
 
-**Backend:**
-- Node.js
-- Express.js
-
-**AI Integration:**
-- Gemini Api
-
-**Database (if used):**
-- MongoDB 
-
-**Deployment:**
-- Render
+- AI-powered resume evaluation
+- Resume quality analysis
+- Experience and skill analysis
+- Formatting quality analysis
+- Missing keyword detection for ATS optimization
 
 ---
 
-## ⚙️ How It Works
+## 📊 ATS-Style Resume Scoring
 
-1. User uploads or inputs resume
-2. Backend extracts and processes resume data
-3. AI model analyzes:
-   - Skills
-   - Experience
-   - Formatting quality
-   - Missing keywords (ATS optimization)
-4. System generates:
-   - Resume score
-   - Detailed feedback
-   - Improvement suggestions
-   - Technical and Behavioral Questions
-   - Persionalized Roadmap
-   - And Skills need to be learnt
-5. Users can generate their resume.
+- Provides an ATS-based resume score
+- Evaluates:
+  - Resume structure
+  - Skills
+  - Keywords
+  - Experience
+  - Formatting quality
 
 ---
+
+## 🧠 Skill Gap Detection
+
+- Detects missing skills based on job roles
+- Identifies technologies and concepts required for career growth
+- Provides personalized skill recommendations
+
+---
+
+## 💡 Smart Resume Suggestions
+
+AI-generated suggestions to improve:
+
+- Resume content
+- Technical skills
+- Project descriptions
+- Professional experience
+- ATS compatibility
+
+---
+
+## 📄 Resume Parsing
+
+Extracts structured information from uploaded resumes:
+
+- Personal details
+- Education
+- Skills
+- Experience
+- Projects
+- Certifications
+
+---
+
+## 📝 Resume Generation
+
+- Generate optimized resumes
+- Improve existing resume content
+- Create professional resume formats
+
+---
+
+## 🎯 Interview Preparation
+
+Generates:
+
+- Technical interview questions
+- Behavioral interview questions
+- Personalized preparation guidance
+
+---
+
+## 🛣️ Personalized Learning Roadmap
+
+Provides:
+
+- Career roadmap
+- Recommended technologies
+- Skills required to learn
+- Improvement suggestions based on goals
+
+---
+
+# 🔐 Web Application Firewall (WAF)
+
+The application includes a custom-built **Web Application Firewall (WAF)** that acts as a security layer between the user and the backend application.
+
+The WAF works like a security gateway that inspects every incoming request before allowing it to reach the application.
+
+Every request passes through the WAF first, where it is analyzed for malicious patterns, security threats, and excessive traffic.
+
+---
+
+# 🛡️ WAF Security Features
+
+## 🚨 SQL Injection Detection and Prevention
+
+The WAF detects and blocks SQL injection attempts that try to manipulate database queries.
+
+Example malicious payload:
